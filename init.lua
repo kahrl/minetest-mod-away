@@ -179,7 +179,6 @@ minetest.register_on_chat_message(function(name, message)
 					else
 						info = awayname .. ' is away: ' .. reason
 					end
-					dump2(away_inform_outbox)
 					table.insert(away_inform_outbox, info)
 					away_last_inform[awayname] = time
 				end
