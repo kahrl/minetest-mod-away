@@ -129,6 +129,8 @@ end
 
 
 minetest.register_on_chat_message(function(name, message)
+	local cmd
+
 	cmd = AWAYP_COMMAND
 	if message:sub(1, #cmd) == cmd then
 		-- /away?
